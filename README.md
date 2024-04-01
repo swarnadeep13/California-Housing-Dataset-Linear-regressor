@@ -1,18 +1,18 @@
 
-![Logo](houses.png)
+![Logo](https://github.com/swarnadeep13/California-Housing-Dataset-Linear-regressor/blob/main/houses.png)
 
 
 # Project Title
 
-A brief description of what this project does - Problem Statement you're trying to solve!
+Linear regression model in California Housing data
 
 
 ## Implementation Details
 
-- Dataset: California Housing Dataset (view below for more details)
+- Dataset: California Housing Dataset ([view below for more details](https://www.kaggle.com/datasets/camnugent/california-housing-prices))
 - Model: [Linear Regressor](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
 - Input: 8 features - Median Houshold income, House Area, ...
-- Output: House Price
+- Output: R2 and MSE for various models in a quest to search for "Good" Models
 
 ## Dataset Details
 
@@ -38,17 +38,38 @@ It can be downloaded/loaded using the sklearn.datasets.fetch_california_housing 
 - Target: Median house value for California districts, expressed in hundreds of thousands of dollars ($100,000)
 
 ## Evaluation and Results
-![alt text](https://github.com/123ofai/Demo-Project-Repo/blob/main/results/test.png)
 
-As you can see from the above image, the model has signifcant amount of error in <x, y, z regions>
+LinearRegression
 
-| Metric        | Value         |
-| ------------- | ------------- |
-| R2 Score      | 0.11          |
-| MSE           | 0.76          |
-| sdfsdfs       | 0.77          | 
+| Metric        | Value (Training) | Value (Validation) |
+| ------------- | ---------------- | ------------------ |
+| R2 Score      |                  1                    |
+| MSE           | 3.50e-15         | 3.39e-15           |
 
-The above quant results show that <>
+KNN
+
+| Metric        | Value (Training) | Value (Validation) |
+| ------------- | ---------------- | ------------------ |
+| R2 Score      |                 0.034                 |
+| MSE           | 0.29             | 0.33               |
+
+RandomForestRegressor
+
+| Metric        | Value (Training) | Value (Validation) |
+| ------------- | ---------------- | ------------------ |
+| R2 Score      |                 0.99                  |
+| MSE           | 0.003            | 0.005              |
+
+GradientBoostingRegressor
+
+| Metric        | Value (Training) | Value (Validation) |
+| ------------- | ---------------- | ------------------ |
+| R2 Score      |                 0.99                  |
+| MSE           | 0.006            | 0.006              |
+
+
+Ensemble learning techniques the Mean Squared error has significantly come down and had a positive impact on the model buidling
+
 ## Key Takeaways
 
 What did you learn while building this project? What challenges did you face and how did you overcome them?
@@ -79,31 +100,19 @@ What are the future modification you plan on making to this project?
 **Packages:** Sklearn, Matplotlib, Pandas, Seaborn
 
 
-## FAQ
 
-#### How does the linear regression model work?
-
-Answer 1
-
-#### How do you train the model on a new dataset?
-
-Answer 2
-
-#### What is the California Housing Dataset?
-
-Answer 2
 ## Acknowledgements
 
 All the links, blogs, videos, papers you referred to/took inspiration from for building this project. 
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+ - [Awesome Example](https://medium.com/@basumatary18/implementing-linear-regression-on-california-housing-dataset-378e14e421b7)
+ - [Awesome README](https://readme.so/)
+
 
 
 ## Contact
 
-If you have any feedback/are interested in collaborating, please reach out to me at fake@fake.com
+If you have any feedback/are interested in collaborating, please reach out to me at swarnadeep.mandal@gmail.com
 
 
 ## License
